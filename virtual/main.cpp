@@ -6,7 +6,7 @@ using namespace std;
 class A
 {
 public:
-	void show()
+	virtual void show()
 	{
 		cout << "Class A\n";
 	}
@@ -17,7 +17,7 @@ class B: public A
 {
 
 public:
-	virtual void show()
+	void show()
 	{
 		cout << "Class B\n";
 	}
@@ -27,7 +27,7 @@ class C: public A
 {
 
 public:
-	virtual void show()
+	void show()
 	{
 		cout << "Class C\n";
 	}
